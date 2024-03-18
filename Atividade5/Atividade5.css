@@ -1,0 +1,113 @@
+.container {
+    width: 500px;
+    height: 500px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 20px;
+}
+
+.container h2 {
+    font-size: 30px;
+    text-align: center;
+    color: rgb(255, 255, 255);
+}
+
+@media (max-width: 160px) {
+    .container {
+        background-color: gray;
+    }
+    .container h2::before {
+        content: "Cinza";
+    }
+}
+
+@media (min-width: 161px) and (max-width: 260px) {
+    .container {
+        background-color: orange;
+    }
+    .container h2::before {
+        content: "Laranja";
+    }
+}
+
+@media (min-width: 261px) and (max-width: 360px) {
+    .container {
+        background-color: rgb(214, 25, 126);
+    }
+    .container h2::before {
+        content: "Rosa";
+    }
+}
+
+@media (min-width: 361px) and (max-width: 460px) {
+    .container {
+        background-color: red;
+    }
+    .container h2::before {
+        content: "Vermelho";
+    }
+}
+
+@media (min-width: 461px) and (max-width: 560px) {
+    .container {
+        background-color: rgb(176, 25, 214);
+    }
+    .container h2::before {
+        content: "Roxo";
+    }
+}
+
+@media (min-width: 561px) and (max-width: 660px) {
+    .container {
+        background-color: rgb(227, 211, 34);
+    }
+    .container h2::before {
+        content: "Amarelo";
+    }
+}
+
+@media (min-width: 661px) and (max-width: 760px) {
+    .container {
+        background-color: rgb(22, 152, 222);
+    }
+    .container h2::before {
+        content: "Azul claro";
+    }
+}
+
+@media (min-width: 761px) and (max-width: 860px) {
+    .container {
+        background-color: rgb(223, 145, 180);
+    }
+    .container h2::before {
+        content: "Rosa Claro";
+    }
+}
+
+@media (min-width: 861px) and (max-width: 960px) {
+    .container {
+        background-color: rgb(94, 75, 55);
+    }
+    .container h2::before {
+        content: "Marrom";
+    }
+}
+
+@media (min-width: 1061px) and (max-width: 1160px) {
+    .container {
+        background-color: rgb(52, 125, 121);
+    }
+    .container h2::before {
+        content: "Verde água";
+    }
+}
+
+@media (min-width: 1161px) {
+    .container {
+        background-color: green;
+    }
+    .container h2::before {
+        content: "Verde";
+    }
+}
